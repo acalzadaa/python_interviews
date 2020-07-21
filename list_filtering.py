@@ -2,15 +2,10 @@
 # and returns a new list with the strings filtered out.
 
 def filter_list(data_list):
-  index = 0
-  returnValue = []
+  return_value = []
   for elem in data_list:
-   
     try:
-      returnValue.append(int(elem))
-      index += 1
-
+      return_value.append(int(elem))
     except ValueError:
       pass
- 
-  return returnValue
+  return return_value

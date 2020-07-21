@@ -1,7 +1,7 @@
 import unittest
 from list_filtering import filter_list
 
-class Test_List_Filtering(unittest.TestCase):
+class TestListFiltering(unittest.TestCase):
     
     def test_list_filtering(self):
         self.assertEqual(filter_list([1,2,'a','b']),[1,2])

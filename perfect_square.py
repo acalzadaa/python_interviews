@@ -5,18 +5,4 @@
 # The tests will always use some integral number, so don't worry about that in dynamic typed languages.
 
 def is_square(n):
-
-    square_flag = False
-
-    if(n < 0):
-        return False
-    elif(n==0):
-        return True
-    else:
-        for num in range(1,n):
-            
-            if ( (num * num) > n):
-                break
-            elif((num * num) == n):
-                square_flag = True
-    return square_flag # fix me
+    return n >= 0 and (n**0.5) % 1 == 0

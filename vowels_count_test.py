@@ -1,7 +1,7 @@
 import unittest
 from vowels_count import get_count
 
-class TestPerfectSquare(unittest.TestCase):
+class TestVowelsCount(unittest.TestCase):
     
     def test_perfect_square(self):
         self.assertEqual(get_count("a"),1)

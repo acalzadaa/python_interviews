@@ -13,7 +13,6 @@ def bits_original(n):
         [int]: [the number of 1's in the binary representation of the integer]
     """
     binary_value = '{0:b}'.format(n)
-    print(binary_value)
     return_value = []
 
     for num in binary_value:
@@ -36,4 +35,3 @@ def bits(n):
     """
     return len(list(filter(lambda num : num if num == "1" else "", '{0:b}'.format(n) )))
 
-print(bits(3))

@@ -13,4 +13,3 @@ def find_it(seq):
 
     return odd_repeated
 
-print(find_it([-1]))

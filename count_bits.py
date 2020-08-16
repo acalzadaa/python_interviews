@@ -16,11 +16,8 @@ def bits_original(n):
     return_value = []
 
     for num in binary_value:
-        print(num)
         if num == "1":
             return_value.append(num)
-        
-    
     return len(return_value)
 
 

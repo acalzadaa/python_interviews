@@ -8,5 +8,4 @@
 # Note: for this kata y isn't considered a vowel.
 
 def disemvowel(string):
-    return ''.join(list(filter(lambda letter : letter if letter.lower() not in ["aeiou"] else '', string)))
-
+    return ''.join(list(filter(lambda letter : letter if letter.lower() not in ['a','e','i','o','u'] else '', string)))

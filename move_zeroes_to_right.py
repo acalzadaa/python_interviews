@@ -10,21 +10,5 @@ def move_zeroes(inputArray):
     Returns:
         [array]: [an array of the input elements with the zeroes moved to the end]
     """
-    returnArray = []
-    zeroesCounter = 0
-
-    # check each element
-
-    for element in inputArray:
-        # is a zero?
-        if '0' == str(element):
-            zeroesCounter += 1
-        else:
-            returnArray.append(element)
-
-    # add the zeroes
-    while(zeroesCounter > 0):
-        returnArray.append(0)
-        zeroesCounter -= 1
-
-    return returnArray
+    returnArray = [element for element in inputArray if (type(element) is str or str(element).startswith("0") == False) ]
+    return returnArray + [0] * (len(inputArray) - len(returnArray))

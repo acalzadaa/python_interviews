@@ -1,5 +1,6 @@
 """Move zeroes"""
 
+
 def move_zeroes(inputArray):
     """Move zeroes to the rigth
 
@@ -15,7 +16,7 @@ def move_zeroes(inputArray):
     # check each element
 
     for element in inputArray:
-        #is a zero?
+        # is a zero?
         if '0' == str(element):
             zeroesCounter += 1
         else:
@@ -25,5 +26,5 @@ def move_zeroes(inputArray):
     while(zeroesCounter > 0):
         returnArray.append(0)
         zeroesCounter -= 1
-    
-    return returnArray 
+
+    return returnArray
